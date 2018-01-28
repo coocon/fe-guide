@@ -4,13 +4,18 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>前端技术概要</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <style>
+            .red {
+                color: red;
+            }
+        </style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,41 +29,259 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+                <!-- page 1 -->
                 <section>
                     <h2> Web前端技术概要 </h2>
+                    <p>----耿朋</p>
+                </section>
+                <!-- page 2 -->
+                <section>
+                    <h2>四块内容</h2>
                         <ol>
-                            <li class="fragment fade-up">Web前端的定义</li>
+                            <li class="fragment fade-up">什么是Web前端</li>
                             <li class="fragment fade-up">Web前端工作需求和职责</li>
-                            <li class="fragment fade-up">Web前端发展历程和对应的技术体系</li>
+                            <li class="fragment fade-up">Web前端发展历程</li>
                             <li class="fragment fade-up">拥抱变化展望未来</li>
                         </ol>
 
                 </section>
-				<section>Web前端的定义</section>
-			</div>
-		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                <!-- page 3 什么是web前端-->
+                <section>
+                    <section>
+                        <h2>什么是Web前端</h2>
+                        <ol>
+                            <li class="fragment fade-up">打开浏览器</li>
+                            <p class="fragment fade-up">
+                                <img src="images/1/baidu.png" alt="baidu pic 所有你看到的就是web前端内容"/>
+                            </p>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2>Web前端的定义</h2>
+                        <ol>
+                            <li class="fragment fade-up">打开调试工具</li>
+                            <p class="fragment fade-up">
+                                <img src="images/1/baidu2.png" alt="baidu pic 所有你看到的就是web前端内容"/>
+                            </p>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2>Web前端工程师</h2>
+                        <!-- TODO: 用百度百科吧，维基百科也可以-->
+                        <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/Flash等各种Web技术进行客户端产品的开发。</p>
+                    </section>
+                </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-                    { src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
-                    // Zoom in and out with Alt+click
-                    { src: 'plugin/zoom-js/zoom.js', async: true },
-                    // Server Side Speaker Notes
-                    { src: 'socket.io/socket.io.js', async: true },
-                    { src: 'plugin/notes-server/client.js', async: true }
+                <!-- page 4 web前端工作需求和职责-->
+                <section>
+                    <section>
+                        <h2>web前端工作需求和职责</h2>
+                        <ol>
+                            <li class="fragment fade-up">web前端招聘</li>
+                            <p class="fragment fade-up">
+                                <img src="images/2/baidu_jd.png" alt="三百多万条信息"/>
+                            </p>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2>看看阿里巴巴的招聘</h2>
+                        <!-- https://job.alibaba.com/zhaopin/positionList.htm?keyWord=d2Vi&_input_charset=UTF-8#page/1 -->
+                        <p class="fragment fade-up">
+                            <img src="images/2/alibaba.png" alt=""/>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>看看腾讯的招聘</h2>
+                        <!-- https://job.alibaba.com/zhaopin/positionList.htm?keyWord=d2Vi&_input_charset=UTF-8#page/1 -->
+                        <p class="fragment fade-up">
+                            <img src="images/2/tengxun.png" alt=""/>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>web前端职责</h2>
+                        <!-- https://join.qq.com/post.php?post=106 -->
+                        <p class="fragment fade-up">
+                            <img src="images/2/duty.png" alt=""/>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>总结招聘岗位要求</h2>
+                        <p><a href="https://job.alibaba.com/zhaopin/position_detail.htm?positionId=45235">前端 </a><a href="https://job.alibaba.com/zhaopin/position_detail.htm?positionId=47927">前端专家</a></p>
+                        <ol>
+                            <li class="fragment fade-up">一定的工作年限(很多时候可以忽略)</li>
+                            <li class="fragment fade-up">前端技能（html,css,javascript)</li>
+                            <!-- 解释原因-->
+                            <li class="fragment fade-up">至少一门后端语言</li>
+                            <li class="fragment fade-up">良好的表达和沟通能力</li>
+                            <li class="fragment fade-up">针对特定业务的额外要求</li>
+                        </ol>
+                    </section>
+                </section>
 
-				]
-			});
-		</script>
-	</body>
+                <!-- web前端技术发展历程 和对应的技术-->
+                <section>
+                    <section>
+                        <h2>Web的起源</h2>
+                        <ul>
+                            <li class="fragment fade-up">web的起源可以追溯到1989年
+                                <em class="red">Tim Berners-Lee</em>构建的CERN项目。
+                            </li>
+                            <li class="fragment fade-up">1994年10月非盈利性的
+                                <em class="red">万维网联盟W3C</em>在麻省理工学院计算机科学实验室成立。
+                            </li>
+                        </ul>
+                        <p style="display:none">负责www 技术技术标准化的协议的制定。</p>
+                        <p style="display:none">1989年CERN中由Tim Berners-Lee领导的小组提交了一个针对Internet的新协议和一个使用该协议的文档系统，该小组将这个新系统命名为Word Wide Web，它的目的在于使全球的科学家能够利用Internet交流自己的工作文档。</p>
+                    </section>
+                    <section>
+                        <h2>Web历史大事记录</h2>
+                        <ol>
+                            <p class="fragment fade-up">
+                                <img src="images/1/history.png" alt="web 历史大事记录"/>
+                            </p>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2>Web1.0纪元</h2>
+                        <ul>
+                            <li>
+                                <h4>关键词</h4>
+                                <p>网页制作、三剑客、特效300例</p>
+                            </li>
+                            <li>
+                                <h4>职业名称</h4>
+                                <p>网页设计师、网页编辑</p>
+                            </li>
+                            <li>
+                                <h4>主要技术</h4>
+                                <p>HTML、CSS、Dreamweaver、Fireworks、Flash</p>
+                            </li>
+                            <li>
+                                <h4>市场需求</h4>
+                                <p>门户网站、企业网站、个人网站</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>前端和后端对比</h2>
+                        <p class="fragment fade-up">
+                            <img src="images/3/1.png" alt="前后端比较"/>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Web2.0纪元</h2>
+                        <ul>
+                            <li>
+                                <h4>关键词</h4>
+                                <p>JavaScript、Ajax、Div+Css、Web标准</p>
+                            </li>
+                            <li>
+                                <h4>职业名称</h4>
+                                <p>前端开发工程师</p>
+                            </li>
+                            <li>
+                                <h4>主要技术</h4>
+                                <p>HTML、CSS、JavaScript</p>
+                            </li>
+                            <li>
+                                <h4>市场需求</h4>
+                                <p>互联网公司、IT软件公司</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>前端和后端对比</h2>
+                        <p class="fragment fade-up">
+                            <img src="images/3/2.png" alt="前后端比较"/>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>HTML 5 纪元</h2>
+                        <ul>
+                            <li>
+                                <h4>关键词</h4>
+                                <p>JavaScript、Ajax、Web标准、HTML5、CSS3、移动Web</p>
+                            </li>
+                            <li>
+                                <h4>职业名称</h4>
+                                <p>前端开发工程师、H5工程师、全栈工程师</p>
+                            </li>
+                            <li>
+                                <h4>主要技术</h4>
+                                <p>HTML、CSS、JavaScript、服务端脚本</p>
+                            </li>
+                            <li>
+                                <h4>市场需求</h4>
+                                <p>互联网公司、IT软件公司、电商、金融、智能硬件、可视化</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>前端和后端对比</h2>
+                        <p class="fragment fade-up">
+                            <img src="images/3/3.png" alt="前后端比较"/>
+                        </p>
+                    </section>
+
+                    <section data-markdown>
+                            ## 前端行业发展
+                            * 云服务
+                            * 微信平台
+                            * 智能硬件
+                            * 移动端HTML5
+                            * HTML5游戏
+                    </section>
+                </section>
+
+                <!-- page last -->
+                <section data-markdown>
+                        ## 前端技术17年回顾
+                        * React 16 和 MIT 许可证
+                        * 下一代 Web 应用模型 — PWA
+                        * Yarn 快速普及，NPM 跟上脚步
+                        * WebAssembly 受主流浏览器支持
+                        * Angular 发布了 v4，以及……v5
+                        * Vue.js 继续流行
+                        * CSS-in-JS 在争议中沉淀
+                        * Webpack Prettier GraphQL
+                        * TypeScript 和 Flow 受追捧
+                </section>
+                <!-- page last -->
+                <section data-markdown>
+                        ## 前端未来技术展望
+                        * Web VR技术
+                        * 人工智能与前端开发
+                </section>
+                <section data-markdown>
+                    ## 谢谢大家
+                    ![关注微信公账号 推荐前端学习](images/4/qrcode.jpg)
+
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
+            // Zoom in and out with Alt+click
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+            // Server Side Speaker Notes
+            { src: 'socket.io/socket.io.js', async: true },
+            { src: 'plugin/notes-server/client.js', async: true }
+
+            ]
+        });
+        </script>
+    </body>
 </html>
